@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @custom-variant hover (&:hover);
+    </style>
+    <title>Cards</title>
+  </head>
+  <body class="bg-slate-50 py-8">
+    <!-- Profile card -->
+    <div
+      class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow"
+    >
+      <!-- Placeholder avatar: replace src with your own image file -->
+      <img
+        src="brune.jpeg
+        "
+        alt="Portrait of brune Irankunda"
+        class="size-24 rounded-full mx-auto mb-4 ring-4 ring-purple-100"
+      />
+
+      <h2 class="text-2xl font-semibold text-slate-800">Brune Irankunda</h2>
+
+      <p class="text-sm text-slate-500 mb-4">Frontend developer</p>
+
+      <p class="text-slate-600 leading-relaxed mb-6">
+        I turn designs into fast, accessible web pages and enjoy building small
+        reusable components.
+      </p>
+
+      <div class="flex items-center justify-center gap-3">
+        <span class="inline-block text-xs bg-purple-100 px-3 py-1 rounded-full">
+          HTML &amp; CSS
+        </span>
+        <span class="inline-block text-xs bg-purple-100 px-3 py-1 rounded-full">
+          Tailwind CSS
+        </span>
+        <span class="inline-block text-xs bg-purple-100 px-3 py-1 rounded-full">
+          JavaScript
+        </span>
+      </div>
+
+      <a
+        href="#"
+        class="inline-block bg-blue-600 text-white font-medium px-5 py-2 rounded-lg hover:bg-blue-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 mt-4"
+      >
+        Contact me
+      </a>
+    </div>
+
+    <!-- Notice banner -->
+    <div
+      class="max-w-sm mx-auto bg-[#fef3c7] text-[#92400e] px-6 py-4 border-l-4 border-[#f59e0b] rounded-lg text-base mt-8"
+    >
+      Heads up: new plans start on the first of the month.
+    </div>
+
+    <!-- Pricing card -->
+    <div
+      class="max-w-xs mx-auto mt-8 mb-1 bg-white border-purple-500 border rounded-lg p-6 space-y-2"
+    >
+      <h2 class="text-xl font-semibold">Online course platform</h2>
+
+      <p class="text-4xl font-bold">$30,000</p>
+
+      <ul class="space-y-2">
+        <li>✓ Unlimited video lessons</li>
+        <li>✓ Student progress tracking</li>
+        <li>✓ Quizzes and certificates</li>
+        <li>✓ Discussion forums</li>
+      </ul>
+
+      <button
+        class="w-full rounded-lg bg-[rgb(79,70,229)] hover:bg-[rgb(67,56,202)] text-white py-2 focus-visible:ring-2 focus-visible:ring-blue-500"
+      ><a href="layout.html">
+        Get Started
+        </a>
+      </button>
+    </div>
+  </body>
+</html>
