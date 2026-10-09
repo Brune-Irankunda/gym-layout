@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Gym - Tailwind</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- PAGE TITLE -->
+    <header class="bg-gray-900 text-white py-8">
+        <h1 class="text-4xl font-bold text-center">
+            Layout Gym — Tailwind Only
+        </h1>
+        <p class="text-center mt-2 text-gray-300">
+            Five layout patterns built with Tailwind CSS
+        </p>
+    </header>
+
+
+    <!-- ===================================== -->
+    <!-- EXERCISE 1 — NINE POSITIONS -->
+    <!-- ===================================== -->
+
+    <section class="max-w-6xl mx-auto p-6">
+
+        <h2 class="text-2xl font-bold mb-4">
+            Exercise 1 — Nine Positions
+        </h2>
+
+        <div class="grid grid-cols-3 gap-4">
+
+            <!-- Top Left -->
+            <div>
+                <p class="font-semibold mb-2">Top Left</p>
+
+                <div class="flex h-64 border bg-white items-start justify-start p-2">
+                    <div class="w-16 h-16 bg-blue-500 text-white flex items-center justify-center">
+                        Box
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top Center -->
+            <div>
+                <p class="font-semibold mb-2">Top Center</p>
+
+                <div class="flex h-64 border bg-white items-start justify-center p-2">
+                    <div class="w-16 h-16 bg-blue-500 text-white flex items-center justify-center">
+                        Box
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top Right -->
+            <div>
+                <p class="font-semibold mb-2">Top Right</p>
+
+                <div class="flex h-64 border bg-white items-start justify-end p-2">
+                    <div class="w-16 h-16 bg-blue-500 text-white flex items-center justify-center">
+                        Box
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle Left -->
+            <div>
+                <p class="font-semibold mb-2">Middle Left</p>
+
+                <div class="flex h-64 border bg-white items-center justify-start p-2">
+                    <div class="w-16 h-16 bg-blue-500 text-white flex items-center justify-center">
+                        Box
+                    </div>
+                </div>
+            </div>
+
+            <!-- Center -->
+            <div>
+                <p class="font-semibold mb-2">Center</p>
+
+                <div class="flex h-64 border bg-white items-center justify-center p-2">
+                    <div class="w-16 h-16 bg-blue-500 text-white flex items-center justify-center">
+                        Box
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle Right -->
+            <div>
+                <p class="font-semibold mb-2">Middle Right</p>
+
+                <div class="flex h-64 border bg-white items-center justify-end p-2">
+                    <div class="w-16 h-16 bg-blue-500 text-white flex items-center justify-center">
+                        Box
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Left -->
+            <div>
+                <p class="font-semibold mb-2">Bottom Left</p>
+
+                <div class="flex h-64 border bg-white items-end justify-start p-2">
+                    <div class="w-16 h-16 bg-blue-500 text-white flex items-center justify-center">
+                        Box
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Center -->
+            <div>
+                <p class="font-semibold mb-2">Bottom Center</p>
+
+                <div class="flex h-64 border bg-white items-end justify-center p-2">
+                    <div class="w-16 h-16 bg-blue-500 text-white flex items-center justify-center">
+                        Box
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Right -->
+            <div>
+                <p class="font-semibold mb-2">Bottom Right</p>
+
+                <div class="flex h-64 border bg-white items-end justify-end p-2">
+                    <div class="w-16 h-16 bg-blue-500 text-white flex items-center justify-center">
+                        Box
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===================================== -->
+    <!-- EXERCISE 2 — NAVBAR -->
+    <!-- ===================================== -->
+
+    <section class="max-w-6xl mx-auto p-6">
+
+        <h2 class="text-2xl font-bold mb-4">
+            Exercise 2 — Navbar
+        </h2>
+
+        <nav class="bg-white border rounded-lg px-6 py-4 flex items-center justify-between">
+
+            <!-- Logo -->
+            <div class="text-xl font-bold text-blue-600">
+                MyLogo
+            </div>
+
+            <!-- Links -->
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-blue-600">Home</a>
+                <a href="#" class="hover:text-blue-600">About</a>
+                <a href="#" class="hover:text-blue-600">Services</a>
+                <a href="#" class="hover:text-blue-600">Contact</a>
+            </div>
+
+            <!-- Sign Up -->
+            <button
+                class="bg-blue-600 text-white px-5 py-2 rounded-lg
+                       hover:bg-blue-700
+                       focus-visible:outline-none
+                       focus-visible:ring-2
+                       focus-visible:ring-blue-500
+                       focus-visible:ring-offset-2">
+                Sign up
+            </button>
+
+        </nav>
+    </section>
+
+
+    <!-- ===================================== -->
+    <!-- EXERCISE 3 — COMMENT LIST -->
+    <!-- ===================================== -->
+
+    <section class="max-w-4xl mx-auto p-6">
+
+        <h2 class="text-2xl font-bold mb-4">
+            Exercise 3 — Comment List
+        </h2>
+
+        <div class="bg-white border rounded-lg p-6 space-y-6">
+
+            <!-- Comment 1 -->
+            <div class="flex gap-4">
+
+                <div class="w-12 h-12 shrink-0 rounded-full bg-blue-500 text-white
+                            flex items-center justify-center font-bold">
+                    AB
+                </div>
+
+                <div>
+                    <h3 class="font-bold">Alice Brown</h3>
+
+                    <p class="text-gray-600">
+                        I really enjoyed this article. The layout examples
+                        are simple and easy to understand.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Comment 2 - Long Text -->
+            <div class="flex gap-4">
+
+                <div class="w-12 h-12 shrink-0 rounded-full bg-green-500 text-white
+                            flex items-center justify-center font-bold">
+                    JM
+                </div>
+
+                <div>
+                    <h3 class="font-bold">John Miller</h3>
+
+                    <p class="text-gray-600">
+                        This is a very long comment designed to demonstrate
+                        the media-object pattern and make sure that the avatar
+                        does not shrink when the text becomes very long.
+                        Tailwind flexbox makes this easy because we can use
+                        shrink-0 on the avatar. This allows the text area to
+                        take the available space while the avatar keeps its
+                        original size. The comment continues with additional
+                        text to make the paragraph long enough to clearly
+                        demonstrate the layout behavior on different screen
+                        sizes.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Comment 3 -->
+            <div class="flex gap-4">
+
+                <div class="w-12 h-12 shrink-0 rounded-full bg-purple-500 text-white
+                            flex items-center justify-center font-bold">
+                    SK
+                </div>
+
+                <div>
+                    <h3 class="font-bold">Sarah Kim</h3>
+
+                    <p class="text-gray-600">
+                        Great work! I especially like how responsive
+                        and clean the design looks.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===================================== -->
+    <!-- EXERCISE 4 — DASHBOARD GRID -->
+    <!-- ===================================== -->
+
+    <section class="max-w-6xl mx-auto p-6">
+
+        <h2 class="text-2xl font-bold mb-4">
+            Exercise 4 — Dashboard Grid
+        </h2>
+
+        <div class="grid grid-cols-4 gap-4">
+
+            <!-- First card spans 2 columns -->
+            <div class="col-span-2 bg-blue-500 text-white p-6 rounded-lg">
+                <h3 class="text-xl font-bold">Card 1</h3>
+                <p class="mt-2">This card spans two columns.</p>
+            </div>
+
+            <!-- Row spanning card -->
+            <div class="row-span-2 bg-green-500 text-white p-6 rounded-lg">
+                <h3 class="text-xl font-bold">Card 2</h3>
+                <p class="mt-2">
+                    This card spans two rows.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-purple-500 text-white p-6 rounded-lg">
+                <h3 class="text-xl font-bold">Card 3</h3>
+                <p class="mt-2">Regular card.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-orange-500 text-white p-6 rounded-lg">
+                <h3 class="text-xl font-bold">Card 4</h3>
+                <p class="mt-2">Regular card.</p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-pink-500 text-white p-6 rounded-lg">
+                <h3 class="text-xl font-bold">Card 5</h3>
+                <p class="mt-2">Regular card.</p>
+            </div>
+
+            <!-- Last card spans full width -->
+            <div class="col-span-full bg-gray-800 text-white p-6 rounded-lg">
+                <h3 class="text-xl font-bold">Card 6</h3>
+                <p class="mt-2">
+                    This card spans the full width.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===================================== -->
+    <!-- EXERCISE 5 — HOLY GRAIL -->
+    <!-- ===================================== -->
+
+    <section class="max-w-6xl mx-auto p-6">
+
+        <h2 class="text-2xl font-bold mb-4">
+            Exercise 5 — Holy Grail Layout
+        </h2>
+
+        <div class="min-h-screen bg-white border rounded-lg overflow-hidden
+                    grid grid-rows-[auto_1fr_auto]">
+
+            <!-- Header -->
+            <header class="bg-gray-900 text-white p-6">
+                <h3 class="text-2xl font-bold">
+                    Website Header
+                </h3>
+            </header>
+
+            <!-- Main Area -->
+            <div class="grid grid-cols-[220px_1fr]">
+
+                <!-- Sidebar -->
+                <aside class="bg-gray-200 p-6">
+                    <h3 class="font-bold text-lg mb-4">
+                        Sidebar
+                    </h3>
+
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="hover:text-blue-600">
+                                Dashboard
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="hover:text-blue-600">
+                                Profile
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="hover:text-blue-600">
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="p-6">
+
+                    <h3 class="text-2xl font-bold mb-4">
+                        Main Content
+                    </h3>
+
+                    <p class="text-gray-600">
+                        This is the main content area of the Holy Grail
+                        layout. The sidebar has a fixed width of 220px
+                        while the main area takes the remaining space.
+                    </p>
+
+                </main>
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="bg-gray-900 text-white text-center p-4">
+                <p>
+                    © 2026 My Website. All rights reserved.
+                </p>
+            </footer>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
